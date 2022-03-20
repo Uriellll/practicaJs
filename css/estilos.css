@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.pokedex{
+    display: flex;
+    
+    
+    
+}
+.box{
+    width: 400px;
+    min-height: 700px;
+    background-color: #CE1131;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 15px #000;
+    z-index: 5;
+}
+.box2{
+    width: 400px;
+    height: 500px;
+    background-color: #CE1131;
+    padding: 20px;    
+    box-shadow: 5px 5px 15px #000;
+}
+.head{
+    padding: 20px;
+    display: flex;
+}
+.lightBig{
+    width: 80px;
+    height: 80px;
+    background-color: #0BCDFF;
+    border-radius: 50%;
+    box-shadow: 5px 0px 5px #fff;
+}
+.light{
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-left: 15px;
+    background-color: #E1E515;
+    box-shadow: 5px 0px 5px #b5b811;
+}
+.light.rojo{
+    background-color: #f10909;
+    box-shadow: 5px 0px 5px #fa0000;
+}
+.image{
+    width: 80%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 24% 99%, 0 76%);
+    background-color: #DEDEDE;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px;
+}
+.image img{
+    width: 200px;
+    width: 200px;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+}
+.buttons{
+    display: flex;
+    display: flex;
+    align-items: center;
+    padding: 50px 30px;
+    justify-content: space-between;
+}
+.but{
+    display: flex;
+}
+.button{
+    width: 60px;
+    height: 60px;
+    background-color: #181818;
+    border-radius: 50%;
+    box-shadow: 5px 0px 5px #0c0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 15px;
+
+}
+.cross{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    clip-path: polygon(25% 0, 0 25%, 25% 50%, 0 75%, 25% 100%, 50% 75%, 75% 100%, 100% 75%, 76% 50%, 100% 25%, 75% 0, 50% 25%);
+    transform: rotate(45deg);
+}
+.stats{
+    width: 100%;
+    background-color: #032D29;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(189, 189, 189);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+label{
+    color: #b8ae11;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 5px;
+}
+ input{
+    color: #b8ae11;
+    padding: 5px;
+    font-weight: 600;
+    background-color: #032D29;
+    margin-left: 5px;
+    font-size: 1.1em;
+}
+.box2 .boxes{
+    background-color: #31A7F1;
+    border: 3px solid #0a4970;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    
+}
+.search{
+    
+    width: 70%;
+    margin: auto;
+    text-align: center;
+   
+    
+}
+.search label{
+    color: #000;
+}
+.search input{
+    background-color: #CE1131;
+    color: #000;
+}
+.image label{
+    color: #000;
+
+}
+@media (max-width: 1000px) {
+    .pokedex{
+        flex-direction: column;
+    }
+    .box{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+  }
+  @media (max-width: 420px) {
+    .box{
+        width: 300px;
+        min-height: 700px;
+      
+    }
+    .box2{
+        width: 300px;
+        height: 500px;
+  
+    }
+    .image{
+        width: 95%;
+    }
+   
+    .search{
+        width: 95%;
+    }
+    .buttons{
+        
+        padding: 50px 5px;
+      
+    }
+    .box2{
+        padding: 5px;
+    }
+  }
